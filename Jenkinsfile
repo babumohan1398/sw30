@@ -15,7 +15,7 @@ pipeline{
         
         stage('Deploy'){
             steps{
-                sh """ sudo cp /var/lib/jenkins/workspace/Ak-deploy/target/java-tomcat-maven-example.war /opt/apache-tomcat-8.5.79/webapps
+                sh """ sudo cp /var/lib/jenkins/workspace/Ak-deploy/target/java-tomcat-maven-example.war /opt/tomcat/webapps
                 sudo yum update
                 """
             }
